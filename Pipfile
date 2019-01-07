@@ -1,0 +1,18 @@
+[[source]]
+name = "tsinghua"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = '*'
+ipdb = '*'
+ipython = '*'
+pylint = '*'
+jedi = '*'
+
+[packages]
+tensorflow = '>1.10.0'
+click = "==7.0"
+
+[requires]
+python_version = "3.6"
