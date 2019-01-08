@@ -116,3 +116,4 @@ dmypy.json
 
 # vscode
 .vscode/
+facenet.pb

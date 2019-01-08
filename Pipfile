@@ -13,6 +13,9 @@ jedi = '*'
 [packages]
 tensorflow = '>1.10.0'
 click = "==7.0"
+six = "*"
+scipy = "==1.2.0"
+sklearn = "*"
 
 [requires]
 python_version = "3.6"
