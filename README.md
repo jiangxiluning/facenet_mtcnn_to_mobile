@@ -1,14 +1,17 @@
 # FaceNet 和 MTCNN 转 TFLITE
 
 ```
-pipenv install  # 布道 pipenv , 通过使用 pipenv 安装所有依赖包，使用其他版本的包，有可能出现各种转换问题。
+git clone https://github.com/jiangxiluning/facenet_mtcnn_to_mobile.git
+cd facenet_mtcnn_to_mobile
+pipenv install --dev  # 布道 pipenv , 通过使用 pipenv 安装所有依赖包，使用其他版本的包，有可能出现各种转换问题。
+pipenv shell # 孵化出运行项目的 shell 环境，以下命令需要在该环境中运行
 ```
 
 ## 转换 FaceNet
 
 ```
 cd facenet
-pipenv shell # 孵化出运行项目的 shell 环境，以下命令需要在该环境中运行
+
 ```
 | Model name      | LFW accuracy | Training dataset | Architecture |
 |-----------------|--------------|------------------|-------------|
@@ -43,5 +46,8 @@ tflite_convert --output_file model_mobile_eval/facenet.tflite --graph_def_file f
 
 祝贺你，你会在文件夹 `model_mobile_eval` 中找到 `facenet.tflite` 文件。此时如果你不再需要你的虚拟环境，你可以运行: 
 ```shell
-pipenv rm
+pipenv --rm
 ```
+
+# 转换 MTCNN
+

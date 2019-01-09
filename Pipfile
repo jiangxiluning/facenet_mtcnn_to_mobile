@@ -11,11 +11,14 @@ pylint = '*'
 jedi = '*'
 
 [packages]
-tensorflow = '>1.10.0'
 click = "==7.0"
 six = "*"
 scipy = "==1.2.0"
 sklearn = "*"
+tf-nightly = "==1.13.0.dev20181219"
 
 [requires]
 python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
