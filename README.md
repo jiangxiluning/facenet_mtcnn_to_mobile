@@ -22,7 +22,7 @@ cd facenet
 ![WX20190108-113436@2x.png](https://i.loli.net/2019/01/08/5c341f9c5f908.png)
 
 
- 将作者提供的 training graph 转为 eval graph，因为不转换为 eval 会附带很多 training 的 op， 并且有很多 op TFLite 和 Core ML 等移动框架并不支持。（最主要的问题是 TFLite 目前不支持 Bool 型标量，比如：phase_train）
+ 将作者提供的 training graph 转为 eval graph，因为不转换为 eval 会附带很多 training 的 op， 并且有很多 op TFLite 和 Core ML 等移动框架并不支持。（最主要的问题是 TFLite 目前不支持 Bool 型标量，比如：phase_train）
 
 ```shell
 python eval_graph.py model_pc model_pc_eval
@@ -32,7 +32,7 @@ python eval_graph.py model_pc model_pc_eval
 ![WX20190108-120019@2x.png](https://i.loli.net/2019/01/08/5c3420a7431d6.png)
 
 
-使用转换后的 eval graph，将参数和结构固化，这里我们用 facenet 自带的 `freeze_graph.py` 脚本，不过由于我们之前导出的是 eval graph 所以 phase_train 这个参数输入被我们删除了，导致输出的 `facenet.pb` 只有一个输入节点 `input shape=(1, 64, 64, 3)` 和一个输出 `output shape=(1,512)`
+使用转换后的 eval graph，将参数和结构固化，这里我们用 facenet 自带的 `freeze_graph.py` 脚本，不过由于我们之前导出的是 eval graph 所以 phase_train 这个参数输入被我们删除了，导致输出的 `facenet.pb` 只有一个输入节点 `input shape=(1, 64, 64, 3)` 和一个输出 `output shape=(1,512)`
 
 ```shell
 python freeze_graph.py model_pc_eval facenet.pb
