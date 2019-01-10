@@ -49,6 +49,8 @@ tflite_convert --output_file model_mobile_eval/facenet.tflite --graph_def_file f
 pipenv --rm
 ```
 
+如果你想转换为 CoreML ，运行 `python tocoreml.py`
+
 # 转换 MTCNN
 
 ```
@@ -74,5 +76,7 @@ python freeze_graph.py --width 800 --height 600
 
 ![WX20190109-141301@2x.png](https://i.loli.net/2019/01/09/5c35910d9d4c0.png)
 
+
+如果你想转换为 CoreML ，运行 `python tocoreml.py`
 
 # 觉得好大家给颗星，谢谢！

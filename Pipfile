@@ -16,6 +16,7 @@ six = "*"
 scipy = "==1.2.0"
 sklearn = "*"
 tf-nightly = "==1.13.0.dev20181219"
+tfcoreml = "==0.3.0"
 
 [requires]
 python_version = "3.6"

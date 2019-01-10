@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b66d6453b77981c3d7352e4291564ef41cc023a79209262c4e28547f4a5872ba"
+            "sha256": "80a067233ce04d46874bd2114379322b0890302a2d2f5b8f2374bf5a26b8b649"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -36,6 +36,23 @@
             ],
             "index": "tsinghua",
             "version": "==7.0"
+        },
+        "coremltools": {
+            "hashes": [
+                "sha256:0b204d8b3ac96c6374f262ece54cce4b95505e0525d5b955a4d88a6b7a493af3",
+                "sha256:31218a1db9cab7c0e50eb90e94b9211d151e0a0aecd8ca7ee546859eb0dc3f14",
+                "sha256:31f0779d45d1583822d1d3226698c0e2976eecd2a01159dade746ee3c47666da",
+                "sha256:43ec8ebec71435176613eeda1446e9f53cf32a06d1ecb61518914883dd2a1058",
+                "sha256:4d3fd552e7671db1dc68f1e5a9901430ba6e1a98a17ef60c4e2d3023c5804261",
+                "sha256:54f0457a70c6c7142153c072c7f8afaf2ef7533921c7cce04da273ec6837f7b4",
+                "sha256:92c4729c64f4e26fa6c4dd09531b9cf455b8a2b0505523cab9c4887440d5375e",
+                "sha256:b7c130a93b5d46bb31d359c4b8fc3b0bbd242abb9c5418cc005adc1c4ec1c47b",
+                "sha256:f320cf7c362842fc74e3557a42d7702c499051398bd4c890a56b7b1eadbb5532",
+                "sha256:f4bb1e5857c74a146fa8e54acde7d5b5069cfda360b73ed4e733c3ede2a0ec62",
+                "sha256:f6e5eae70dbe68861165c87f5f0842994852a59ac7fac4c49a3d73c971ab41f2",
+                "sha256:f8a8b3f9626d41982ecd408f84847ac84a5167c3316045f00a498422bac0878a"
+            ],
+            "version": "==2.0"
         },
         "gast": {
             "hashes": [
@@ -271,11 +288,11 @@
         },
         "six": {
             "hashes": [
-                "sha256:3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c",
-                "sha256:d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+                "sha256:0ff78c403d9bccf5a425a6d31a12aa6b47f1c21ca4dc2573a7e2f32a97335eb1",
+                "sha256:105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"
             ],
             "index": "tsinghua",
-            "version": "==1.12.0"
+            "version": "==1.10.0"
         },
         "sklearn": {
             "hashes": [
@@ -291,6 +308,30 @@
             ],
             "version": "==1.13.0a20190107"
         },
+        "tensorboard": {
+            "hashes": [
+                "sha256:6f194519f41762bfdf5eb410ccf33226d1c252caf5ad8893288648bfbcf4d135",
+                "sha256:81170f66bf8f95c2e9f6b3fefe0ddc5472655a9e3793e73b5b5d4ec0ba395e76"
+            ],
+            "version": "==1.12.2"
+        },
+        "tensorflow": {
+            "hashes": [
+                "sha256:16fb8a59e724afd37a276d33b7e2ed070e5c84899a8d4cfc3fe1bb446a859da7",
+                "sha256:1ae50e44c0b29df5fb5b460118be5a257b4eb3e561008f64d2c4c715651259b7",
+                "sha256:1b7d09cc26ef727d628dcb74841b89374a38ed81af25bd589a21659ef67443da",
+                "sha256:2681b55d3e434e20fe98e3a3b1bde3588af62d7864b62feee4141a71e29ef594",
+                "sha256:42fc8398ce9f9895b488f516ea0143cf6cf2a3a5fc804da4a190b063304bc173",
+                "sha256:531619ad1c17b4084d09f442a9171318af813e81aae748e5de8274d561461749",
+                "sha256:5cee35f8a6a12e83560f30246811643efdc551c364bc981d27f21fbd0926403d",
+                "sha256:6ad6ed495f1a3d445c43d90cb2ce251ff5532fd6436e25f52977ee59ffa583df",
+                "sha256:cd8c1a899e3befe1ccb774ea1aae077a4b1286f855c956210b23766f4ac85c30",
+                "sha256:d3f3d7cd9bd4cdc7ebf25fd6c2dfc103dcf4b2834ae9276cc4cf897eb1515f6d",
+                "sha256:e4f479e6aca595acc98347364288cbdfd3c025ca85389380174ea75a43c327b7",
+                "sha256:f587dc03b5f0d1e50cca39b7159c9f21ffdec96273dbf5f7619d48c622cb21f2"
+            ],
+            "version": "==1.12.0"
+        },
         "termcolor": {
             "hashes": [
                 "sha256:1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b"
@@ -299,9 +340,9 @@
         },
         "tf-estimator-nightly": {
             "hashes": [
-                "sha256:539221abb6578b6cf01c5edd2caf8a9268281a990784d3f8ccd1411db7f580b9"
+                "sha256:694e800acd943ceba5f932149b07777329f2b768c78effae4cd9223f30eb4845"
             ],
-            "version": "==1.12.0.dev20181217"
+            "version": "==1.13.0.dev2019010910"
         },
         "tf-nightly": {
             "hashes": [
@@ -321,6 +362,15 @@
             ],
             "index": "tsinghua",
             "version": "==1.13.0.dev20181219"
+        },
+        "tfcoreml": {
+            "hashes": [
+                "sha256:18fa2bf178a4f3d910c1ab6d9774bac09007aac5cfae4ad6ced115a8e3aa7333",
+                "sha256:33f8c6568cdfda233d77bc9f965870fdf9355a068e3ceb5d6712eee4f9f949f8",
+                "sha256:f76e40d8cefc962fb9082e8ca2966aecb0980f40de3ce18185e39b82bb3e1fb5"
+            ],
+            "index": "tsinghua",
+            "version": "==0.3.0"
         },
         "werkzeug": {
             "hashes": [
@@ -493,10 +543,10 @@
         },
         "pluggy": {
             "hashes": [
-                "sha256:447ba94990e8014ee25ec853339faf7b0fc8050cdc3289d4d71f7f410fb90095",
-                "sha256:bde19360a8ec4dfd8a20dcb811780a30998101f078fc7ded6162f0076f50508f"
+                "sha256:8ddc32f03971bfdf900a81961a48ccf2fb677cf7715108f85295c67405798616",
+                "sha256:980710797ff6a041e9a73a5787804f848996ecaa6f8a1b1e08224a5894f2074a"
             ],
-            "version": "==0.8.0"
+            "version": "==0.8.1"
         },
         "prompt-toolkit": {
             "hashes": [
@@ -545,11 +595,11 @@
         },
         "six": {
             "hashes": [
-                "sha256:3350809f0555b11f552448330d0b52d5f24c91a322ea4a15ef22629740f3761c",
-                "sha256:d16a0141ec1a18405cd4ce8b4613101da75da0e9a7aec5bdd4fa804d0e0eba73"
+                "sha256:0ff78c403d9bccf5a425a6d31a12aa6b47f1c21ca4dc2573a7e2f32a97335eb1",
+                "sha256:105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"
             ],
             "index": "tsinghua",
-            "version": "==1.12.0"
+            "version": "==1.10.0"
         },
         "traitlets": {
             "hashes": [
@@ -594,9 +644,9 @@
         },
         "wrapt": {
             "hashes": [
-                "sha256:d4d560d479f2c21e1b5443bbd15fe7ec4b37fe7e53d335d3b9b0a7b1226fe3c6"
+                "sha256:e03f19f64d81d0a3099518ca26b04550026f131eced2e76ced7b85c6b8d32128"
             ],
-            "version": "==1.10.11"
+            "version": "==1.11.0"
         }
     }
 }
