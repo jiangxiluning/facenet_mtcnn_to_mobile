@@ -1,4 +1,4 @@
-# FaceNet 和 MTCNN 转 TFLITE
+# FaceNet 和 MTCNN 转 TFLITE 和 CoreML
 
 ```
 git clone https://github.com/jiangxiluning/facenet_mtcnn_to_mobile.git
