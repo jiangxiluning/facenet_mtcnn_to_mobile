@@ -15,7 +15,7 @@ click = "==7.0"
 six = "*"
 scipy = "==1.2.0"
 sklearn = "*"
-tf-nightly = "==1.13.0.dev20181219"
+tf-nightly = "==1.13.0.dev20190214"
 tfcoreml = "==0.3.0"
 
 [requires]
