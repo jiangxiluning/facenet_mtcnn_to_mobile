@@ -8,7 +8,7 @@ OUTPUT_DIR = (Path(__file__).parent / "frozen_graphs").absolute()
 
 def freeze_graph_def(sess, input_graph_def, output_node_names):
     # Replace all the variables in the graph with constants of the same values
-    output_graph_def = tf.compat.v1.graph_util.convert_variables_to_constants(
+    output_graph_def = tf.graph_util.convert_variables_to_constants(
         sess, input_graph_def, output_node_names.split(","))
     return output_graph_def
 
